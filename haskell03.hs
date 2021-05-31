@@ -29,4 +29,13 @@ selectExpr :: [Int] -> [Int]
 selectExpr n = [x | x <- n, even x, x > 20 && x < 50]
 
 countShorts :: [String] -> Int
-countShorts
+countShorts lis = length [x | x <- lis, length x > 5]
+
+calcExpr :: [Float] -> [Float]
+calcExpr lis = [x^2/2 | x <- lis, x > 10]
+
+trSpaces :: String -> String
+trSpaces s = [if x == ' ' then '-' else x | x <- s]
+
+selectSnd :: [(Int,Int)] -> [Int]
+selectSnd 
