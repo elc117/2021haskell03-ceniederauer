@@ -38,4 +38,5 @@ trSpaces :: String -> String
 trSpaces s = [if x == ' ' then '-' else x | x <- s]
 
 selectSnd :: [(Int,Int)] -> [Int]
-selectSnd 
+selectSnd i = [snd x | x <- i]
+
